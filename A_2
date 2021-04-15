@@ -8,7 +8,7 @@ int main() {
 	int* p2 = p;
 	*p = 10;
 	delete p;
-	cout << *p2;// lỗi do đã xóa mất vùng nhớ mà con trỏ p2 đã trỏ đến trong leap
+	cout << *p2;// lỗi do đã xóa mất vùng nhớ mà con trỏ p2 đã trỏ đến trong eap
 	delete p2;
 
 	return 0;
