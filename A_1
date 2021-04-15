@@ -1,0 +1,19 @@
+char* concat(const char* a, const char* b) {
+	
+	char* s = new char;
+	int i = 0;
+	while (*(a + i) != '\0') {
+		*(s + i) = *(a + i);
+		i++;
+	}
+
+	int j = 0;
+	while (*(b + j) != '\0') {
+		*(s + i + j) = *(b + j);
+		j++;
+	}
+	
+	char* size = s + i + j;
+	*size = '\0';
+	return s;
+}
