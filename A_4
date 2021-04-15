@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int i = 3;
+	cout << i << endl;
+
+	int* j = &i;
+	delete j;
+	cout << i;// lệnh delete xóa vùng nhớ mà con trỏ trỏ tới 
+
+	return 0;
+}
